@@ -21,7 +21,14 @@ class EnglishWordGame:
             ("apple", "ringo"), ("dog", "inu"), ("cat", "neko"), 
             ("house", "ie"), ("car", "kuruma"), ("book", "hon"), 
             ("school", "gakkou"), ("mountain", "yama"), 
-            ("river", "kawa"), ("fish", "sakana")
+            ("river", "kawa"), ("fish", "sakana"), ("light", "hikari"),
+            ("black", "kuro"), ("animal", "doubutsu"), ("january", "ichigatsu"),
+            ("spring", "haru"), ("summer", "natsu"), ("fall", "aki"), ("winter", "fuyu"),
+            ("night", "yoru"), ("evening", "yuugata"), ("morning","asa"),
+            ("breakfast","asagohan"), ("kitchen", "daidokoro"),("chair", "isu"),
+            ("music","ongaku"), ("egg","tamago"), ("teacher", "sensei"),
+            ("math", "suugaku"), ("student", "seito"), ("people", "hitobito"),
+            ("park", "kouen"), ("birthday", "tanjyoubi")
         ]
 
         # 現在の質問と回答を選択
@@ -116,7 +123,7 @@ class EnglishWordGame:
             pyxel.text(70, 90, f"Life: {'|' * self.hearts}", 7)
 
             # 現在の質問（日本語）を表示
-            pyxel.text(70, 120, f"{self.current_question[1]}", 7)
+            pyxel.text(70, 120, f"{self.current_question[1]}", 8)
 
             # ユーザーが選択した文字を表示（コメントアウトされている）
             # if self.selected_letter:
@@ -243,6 +250,7 @@ class EnglishWordGame:
 
         # 新しい質問の選択肢を生成
         self.current_options = self.generate_options()
+
 
 
 if __name__ == "__main__":
