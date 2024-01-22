@@ -245,6 +245,5 @@ class EnglishWordGame:
         self.current_options = self.generate_options()
 
 
-
 if __name__ == "__main__":
     EnglishWordGame()
